@@ -1,12 +1,61 @@
-# React + Vite
+#KoinX
+# 🧾 Tax Loss Harvesting Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive dashboard that helps users estimate potential tax savings by comparing capital gains **before and after harvesting**. Built using **React**, **Tailwind CSS**, and **Context API**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌗 Theme toggle for Light/Dark mode
+- 📊 Dynamic Holdings Table with asset selection
+- 🔄 Real-time capital gains updates (Pre & Post Harvesting)
+- 🧠 Global state managed using React Context
+- ⚡ Clean, responsive UI with Tailwind CSS
 
-## Expanding the ESLint configuration
+Screenshot
+Desktop-Light: ./src/assets/images/KoinX-Desktop-Light
+Desktop-Dark: ./src/assets/images/KoinX-Desktop-Dark
+Mobile-Dark: ./src/assets/images/KoinX-Mobile-Light
+Mobile-Light: ./src/assets/images/KoinX-Mobile-Light
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🧩 Folder Structure
+
+src/
+├── assets/
+│ └── images/
+├── components/
+│ ├── context/
+│ │ └── HarvestContext.jsx
+│ ├── CapitalGainsCard.jsx
+│ ├── Disclaimer.jsx
+│ ├── HarvestSummary.jsx
+│ ├── HoldingsTable.jsx
+│ └── SummaryCard.jsx
+├── pages/
+│ └── TaxHarvesting.jsx
+├── utils/
+│ └── calculations.js
+├── App.jsx
+├── main.jsx
+├── App.css
+├── index.css
+
+Created Using
+git init
+git remote add origin https://github.com/tabrsh04/KOINX.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+npm run build
+npm run deploy
+
+Assumptions:
+
+User understands basic tax harvesting concepts.
+
+All financial data and crypto prices are mocked for demonstration.
+
+Holdings and rates are static and not fetched from a live API.
+
+Calculations are for visual purposes only, not actual tax advice.
